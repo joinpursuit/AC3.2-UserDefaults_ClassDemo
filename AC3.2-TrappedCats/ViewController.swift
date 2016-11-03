@@ -21,7 +21,8 @@ class ViewController: UIViewController {
     
     // in class paired programming example
 //    self.savePairedProgrammingCats()
-    self.loadPairedProgrammingCats()
+//    self.loadPairedProgrammingCats()
+    self.deletePairedProgrammingCats()
     
     // my solution
     // self.saveCats()
@@ -37,31 +38,31 @@ class ViewController: UIViewController {
     
   }
   
-  
+
   // ---------------------------------------------------------------------------------------
   // MARK: - In-Class Paired Demo Solution
   
   // Saving
-//  internal func savePairedProgrammingCats() {
-//    let defaults = UserDefaults.standard
-//    
-//    if let instaCats: [InstaCat] = InstaCatFactory.makeInstaCats(fileName: "InstaCats.json") {
-//      
-//      var defaultDict = [String: String]()
-//      
-//      for eachCat in 0..<instaCats.count {
-//        defaultDict["name\(eachCat)"] = instaCats[eachCat].name
-//        defaultDict["id\(eachCat)"] = String(instaCats[eachCat].catID)
-//        defaultDict["instagram\(eachCat)"] = instaCats[eachCat].instagramURL.absoluteString
-//        defaultDict["description\(eachCat)"] = instaCats[eachCat].description
-//      }
-//      
-//      print(defaultDict) //What would be the last four elements?
-//      defaults.set(defaultDict,forKey: "instaCats")
-//      
-//      parsedCatsTextField.text = "\(defaultDict)"
-//    }
-//  }
+  internal func savePairedProgrammingCats() {
+    let defaults = UserDefaults.standard
+    
+    if let instaCats: [InstaCat] = InstaCatFactory.makeInstaCats(fileName: "InstaCats.json") {
+      
+      var defaultDict = [String: String]()
+      
+      for eachCat in 0..<instaCats.count {
+        defaultDict["name\(eachCat)"] = instaCats[eachCat].name
+        defaultDict["id\(eachCat)"] = String(instaCats[eachCat].catID)
+        defaultDict["instagram\(eachCat)"] = instaCats[eachCat].instagramURL.absoluteString
+        defaultDict["description\(eachCat)"] = instaCats[eachCat].description
+      }
+      
+      print(defaultDict) //What would be the last four elements?
+      defaults.set(defaultDict,forKey: "instaCats")
+      
+      parsedCatsTextField.text = "\(defaultDict)"
+    }
+  }
   
   // Loading
   func loadPairedProgrammingCats() {
@@ -89,6 +90,13 @@ class ViewController: UIViewController {
     }
   }
   
+  // Deleting
+  func deletePairedProgrammingCats() {
+    let defaults = UserDefaults.standard
+    defaults.set(nil, forKey: "instaCats")
+    
+//    self.loadPairedProgrammingCats()
+  }
   
   // ---------------------------------------------------------------------------------------
   // MARK: - Saving using Data
