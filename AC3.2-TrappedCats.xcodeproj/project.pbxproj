@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14DABC6D1DCB86B600830FFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DABC6C1DCB86B600830FFB /* AppDelegate.swift */; };
+		14DABC6F1DCB86B600830FFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DABC6E1DCB86B600830FFB /* ViewController.swift */; };
+		14DABC721DCB86B600830FFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DABC701DCB86B600830FFB /* Main.storyboard */; };
+		14DABC741DCB86B600830FFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DABC731DCB86B600830FFB /* Assets.xcassets */; };
+		14DABC771DCB86B600830FFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DABC751DCB86B600830FFB /* LaunchScreen.storyboard */; };
+		14DABC821DCB86B700830FFB /* AC3_2_TrappedCatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DABC811DCB86B700830FFB /* AC3_2_TrappedCatsTests.swift */; };
+		14DABC8E1DCB87B900830FFB /* InstaCats.json in Resources */ = {isa = PBXBuildFile; fileRef = 14DABC8D1DCB87B900830FFB /* InstaCats.json */; };
+		14DABC901DCB883F00830FFB /* InstaCatFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DABC8F1DCB883F00830FFB /* InstaCatFactory.swift */; };
+		14DABC921DCB885500830FFB /* InstaCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DABC911DCB885500830FFB /* InstaCat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14DABC7E1DCB86B700830FFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14DABC611DCB86B600830FFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14DABC681DCB86B600830FFB;
+			remoteInfo = "AC3.2-TrappedCats";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14DABC691DCB86B600830FFB /* AC3.2-TrappedCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC3.2-TrappedCats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DABC6C1DCB86B600830FFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14DABC6E1DCB86B600830FFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14DABC711DCB86B600830FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14DABC731DCB86B600830FFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14DABC761DCB86B600830FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14DABC781DCB86B600830FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DABC7D1DCB86B700830FFB /* AC3.2-TrappedCatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AC3.2-TrappedCatsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DABC811DCB86B700830FFB /* AC3_2_TrappedCatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AC3_2_TrappedCatsTests.swift; sourceTree = "<group>"; };
+		14DABC831DCB86B700830FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DABC8D1DCB87B900830FFB /* InstaCats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = InstaCats.json; sourceTree = "<group>"; };
+		14DABC8F1DCB883F00830FFB /* InstaCatFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaCatFactory.swift; sourceTree = "<group>"; };
+		14DABC911DCB885500830FFB /* InstaCat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaCat.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14DABC661DCB86B600830FFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DABC7A1DCB86B700830FFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14DABC601DCB86B600830FFB = {
+			isa = PBXGroup;
+			children = (
+				14DABC6B1DCB86B600830FFB /* AC3.2-TrappedCats */,
+				14DABC801DCB86B700830FFB /* AC3.2-TrappedCatsTests */,
+				14DABC6A1DCB86B600830FFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14DABC6A1DCB86B600830FFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14DABC691DCB86B600830FFB /* AC3.2-TrappedCats.app */,
+				14DABC7D1DCB86B700830FFB /* AC3.2-TrappedCatsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14DABC6B1DCB86B600830FFB /* AC3.2-TrappedCats */ = {
+			isa = PBXGroup;
+			children = (
+				14DABC6C1DCB86B600830FFB /* AppDelegate.swift */,
+				14DABC6E1DCB86B600830FFB /* ViewController.swift */,
+				14DABC8C1DCB86E500830FFB /* Supporting Files */,
+			);
+			path = "AC3.2-TrappedCats";
+			sourceTree = "<group>";
+		};
+		14DABC801DCB86B700830FFB /* AC3.2-TrappedCatsTests */ = {
+			isa = PBXGroup;
+			children = (
+				14DABC811DCB86B700830FFB /* AC3_2_TrappedCatsTests.swift */,
+				14DABC831DCB86B700830FFB /* Info.plist */,
+			);
+			path = "AC3.2-TrappedCatsTests";
+			sourceTree = "<group>";
+		};
+		14DABC8C1DCB86E500830FFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14DABC8D1DCB87B900830FFB /* InstaCats.json */,
+				14DABC911DCB885500830FFB /* InstaCat.swift */,
+				14DABC8F1DCB883F00830FFB /* InstaCatFactory.swift */,
+				14DABC701DCB86B600830FFB /* Main.storyboard */,
+				14DABC731DCB86B600830FFB /* Assets.xcassets */,
+				14DABC751DCB86B600830FFB /* LaunchScreen.storyboard */,
+				14DABC781DCB86B600830FFB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14DABC681DCB86B600830FFB /* AC3.2-TrappedCats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DABC861DCB86B700830FFB /* Build configuration list for PBXNativeTarget "AC3.2-TrappedCats" */;
+			buildPhases = (
+				14DABC651DCB86B600830FFB /* Sources */,
+				14DABC661DCB86B600830FFB /* Frameworks */,
+				14DABC671DCB86B600830FFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AC3.2-TrappedCats";
+			productName = "AC3.2-TrappedCats";
+			productReference = 14DABC691DCB86B600830FFB /* AC3.2-TrappedCats.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14DABC7C1DCB86B700830FFB /* AC3.2-TrappedCatsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DABC891DCB86B700830FFB /* Build configuration list for PBXNativeTarget "AC3.2-TrappedCatsTests" */;
+			buildPhases = (
+				14DABC791DCB86B700830FFB /* Sources */,
+				14DABC7A1DCB86B700830FFB /* Frameworks */,
+				14DABC7B1DCB86B700830FFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14DABC7F1DCB86B700830FFB /* PBXTargetDependency */,
+			);
+			name = "AC3.2-TrappedCatsTests";
+			productName = "AC3.2-TrappedCatsTests";
+			productReference = 14DABC7D1DCB86B700830FFB /* AC3.2-TrappedCatsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14DABC611DCB86B600830FFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = C4Q;
+				TargetAttributes = {
+					14DABC681DCB86B600830FFB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					14DABC7C1DCB86B700830FFB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 14DABC681DCB86B600830FFB;
+					};
+				};
+			};
+			buildConfigurationList = 14DABC641DCB86B600830FFB /* Build configuration list for PBXProject "AC3.2-TrappedCats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14DABC601DCB86B600830FFB;
+			productRefGroup = 14DABC6A1DCB86B600830FFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14DABC681DCB86B600830FFB /* AC3.2-TrappedCats */,
+				14DABC7C1DCB86B700830FFB /* AC3.2-TrappedCatsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14DABC671DCB86B600830FFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DABC8E1DCB87B900830FFB /* InstaCats.json in Resources */,
+				14DABC771DCB86B600830FFB /* LaunchScreen.storyboard in Resources */,
+				14DABC741DCB86B600830FFB /* Assets.xcassets in Resources */,
+				14DABC721DCB86B600830FFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DABC7B1DCB86B700830FFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14DABC651DCB86B600830FFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DABC921DCB885500830FFB /* InstaCat.swift in Sources */,
+				14DABC901DCB883F00830FFB /* InstaCatFactory.swift in Sources */,
+				14DABC6F1DCB86B600830FFB /* ViewController.swift in Sources */,
+				14DABC6D1DCB86B600830FFB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DABC791DCB86B700830FFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DABC821DCB86B700830FFB /* AC3_2_TrappedCatsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14DABC7F1DCB86B700830FFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14DABC681DCB86B600830FFB /* AC3.2-TrappedCats */;
+			targetProxy = 14DABC7E1DCB86B700830FFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14DABC701DCB86B600830FFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14DABC711DCB86B600830FFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14DABC751DCB86B600830FFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14DABC761DCB86B600830FFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14DABC841DCB86B700830FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14DABC851DCB86B700830FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14DABC871DCB86B700830FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "AC3.2-TrappedCats/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nyc.AccessCode.AC3-2-TrappedCats";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		14DABC881DCB86B700830FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "AC3.2-TrappedCats/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nyc.AccessCode.AC3-2-TrappedCats";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		14DABC8A1DCB86B700830FFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "AC3.2-TrappedCatsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nyc.AccessCode.AC3-2-TrappedCatsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AC3.2-TrappedCats.app/AC3.2-TrappedCats";
+			};
+			name = Debug;
+		};
+		14DABC8B1DCB86B700830FFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "AC3.2-TrappedCatsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nyc.AccessCode.AC3-2-TrappedCatsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AC3.2-TrappedCats.app/AC3.2-TrappedCats";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14DABC641DCB86B600830FFB /* Build configuration list for PBXProject "AC3.2-TrappedCats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DABC841DCB86B700830FFB /* Debug */,
+				14DABC851DCB86B700830FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DABC861DCB86B700830FFB /* Build configuration list for PBXNativeTarget "AC3.2-TrappedCats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DABC871DCB86B700830FFB /* Debug */,
+				14DABC881DCB86B700830FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14DABC891DCB86B700830FFB /* Build configuration list for PBXNativeTarget "AC3.2-TrappedCatsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DABC8A1DCB86B700830FFB /* Debug */,
+				14DABC8B1DCB86B700830FFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14DABC611DCB86B600830FFB /* Project object */;
+}
