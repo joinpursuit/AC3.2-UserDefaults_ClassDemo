@@ -19,11 +19,9 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    
     // in class paired programming example
-    self.savePairedProgrammingCats()
+//    self.savePairedProgrammingCats()
     self.loadPairedProgrammingCats()
-    
     
     // my solution
     // self.saveCats()
@@ -44,31 +42,49 @@ class ViewController: UIViewController {
   // MARK: - In-Class Paired Demo Solution
   
   // Saving
-  internal func savePairedProgrammingCats() {
-    let defaults = UserDefaults.standard
-    
-    if let instaCats: [InstaCat] = InstaCatFactory.makeInstaCats(fileName: "InstaCats.json") {
-      
-      var defaultDict = [String: String]()
-      
-      for eachCat in 0..<instaCats.count {
-        defaultDict["name\(eachCat)"] = instaCats[eachCat].name
-        defaultDict["id\(eachCat)"] = String(instaCats[eachCat].catID)
-        defaultDict["instagram\(eachCat)"] = instaCats[eachCat].instagramURL.absoluteString
-        defaultDict["description\(eachCat)"] = instaCats[eachCat].description
-      }
-      
-      print(defaultDict) //What would be the last four elements?
-      defaults.set(defaultDict,forKey: "instaCats")
-      
-      parsedCatsTextField.text = "\(defaultDict)"
-    }
-  }
+//  internal func savePairedProgrammingCats() {
+//    let defaults = UserDefaults.standard
+//    
+//    if let instaCats: [InstaCat] = InstaCatFactory.makeInstaCats(fileName: "InstaCats.json") {
+//      
+//      var defaultDict = [String: String]()
+//      
+//      for eachCat in 0..<instaCats.count {
+//        defaultDict["name\(eachCat)"] = instaCats[eachCat].name
+//        defaultDict["id\(eachCat)"] = String(instaCats[eachCat].catID)
+//        defaultDict["instagram\(eachCat)"] = instaCats[eachCat].instagramURL.absoluteString
+//        defaultDict["description\(eachCat)"] = instaCats[eachCat].description
+//      }
+//      
+//      print(defaultDict) //What would be the last four elements?
+//      defaults.set(defaultDict,forKey: "instaCats")
+//      
+//      parsedCatsTextField.text = "\(defaultDict)"
+//    }
+//  }
   
   // Loading
   func loadPairedProgrammingCats() {
     let defaults = UserDefaults.standard
     if let defaultsCatDict = defaults.value(forKey: "instaCats") as? [String : String] {
+      
+      var appendMeMeow = [InstaCat]()
+      
+      for i in 0..<3 {
+          // Returns optional Strings
+        guard let name = defaultsCatDict["name\(i)"],
+        let id = defaultsCatDict["id\(i)"],
+        let instagram = defaultsCatDict["instagram\(i)"],
+        let _ = defaultsCatDict["description\(i)"],
+      
+          // String -> Int && String -> URL
+        let IntID = Int(id),
+        let instagramURL = URL(string: instagram)
+        else { return }
+        
+        appendMeMeow.append(InstaCat.init(name: name, id: IntID, instagramURL: instagramURL))
+        print(appendMeMeow)
+      }
       
     }
   }
